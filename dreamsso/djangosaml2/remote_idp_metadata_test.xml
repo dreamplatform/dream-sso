@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<md:EntityDescriptor entityID="http://localhost:8000/saml/metadata/" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+  <md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIICzTCCAnegAwIBAgIJAP943FEqlQ4/MA0GCSqGSIb3DQEBBQUAMHoxCzAJBgNV
+BAYTAmZpMRAwDgYDVQQIEwd0YW1wZXJlMRAwDgYDVQQHEwd0YW1wZXJlMQ4wDAYD
+VQQKEwVoYWx0dTEOMAwGA1UECxMFaGFsdHUxDDAKBgNVBAMTA3NhbjEZMBcGCSqG
+SIb3DQEJARYKZm9vQGZvby5maTAeFw0xMjAzMDUxNTMxNThaFw0xMzAzMDUxNTMx
+NThaMHoxCzAJBgNVBAYTAmZpMRAwDgYDVQQIEwd0YW1wZXJlMRAwDgYDVQQHEwd0
+YW1wZXJlMQ4wDAYDVQQKEwVoYWx0dTEOMAwGA1UECxMFaGFsdHUxDDAKBgNVBAMT
+A3NhbjEZMBcGCSqGSIb3DQEJARYKZm9vQGZvby5maTBcMA0GCSqGSIb3DQEBAQUA
+A0sAMEgCQQCzKYZry0BY8WHnbnJaE1yla9AJj4tBjb2zo6w5by+iF38YF1JhUAE5
+94+Z7T9dIxow79jKONOPxBr+RujzLpSfAgMBAAGjgd8wgdwwHQYDVR0OBBYEFJo9
+xbCqtrP1eHsZoVc3EONZ58x+MIGsBgNVHSMEgaQwgaGAFJo9xbCqtrP1eHsZoVc3
+EONZ58x+oX6kfDB6MQswCQYDVQQGEwJmaTEQMA4GA1UECBMHdGFtcGVyZTEQMA4G
+A1UEBxMHdGFtcGVyZTEOMAwGA1UEChMFaGFsdHUxDjAMBgNVBAsTBWhhbHR1MQww
+CgYDVQQDEwNzYW4xGTAXBgkqhkiG9w0BCQEWCmZvb0Bmb28uZmmCCQD/eNxRKpUO
+PzAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA0EAI6yEK9PxihTL0+LIKJ8x
+KszbvVpdcPs+YyUqLwjto3moiaZPk2L+MED+5c7Z7DonN/zosmcydOnLZzcfgc8d
+sw==
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://localhost:8000/saml/SLO/" />
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://localhost:8000/saml/SSO/" />
+  </md:IDPSSODescriptor>
+</md:EntityDescriptor>

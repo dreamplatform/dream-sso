@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="id.dreamschool.fi">
+  <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIEDDCCAvSgAwIBAgIJAJIy7M+uXf/3MA0GCSqGSIb3DQEBBQUAMGExCzAJBgNVBAYTAkZJMRAwDgYDVQQIEwdUYW1wZXJlMRAwDgYDVQQHEwdUYW1wZXJlMREwDwYDVQQKEwhIYWx0dSBPeTEbMBkGA1UEAxMSd3d3LmRyZWFtc2Nob29sLmZpMB4XDTExMDIwMTEyNTMyNFoXDTIxMDEzMTEyNTMyNFowYTELMAkGA1UEBhMCRkkxEDAOBgNVBAgTB1RhbXBlcmUxEDAOBgNVBAcTB1RhbXBlcmUxETAPBgNVBAoTCEhhbHR1IE95MRswGQYDVQQDExJ3d3cuZHJlYW1zY2hvb2wuZmkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC335M1JHBAiWEpLB6FAKTS5ZhxCoyfY/1uEG814iSUYozFPi6vm5H2GsCj2vJeNYoMhUltG0Q0FWjJMVolU2cSVcHpXnfavie816UsiAT/h6825btdxE5c8IsZ913ChSfBZ1sCOzS1v41Ox8wL66rOfRRpawYwEkXTL0kzuhrw9XgM4eTTj1q5uKx/55Hqc6sD17j2ehfpWrAhIYTPNJez8hps58YmctaJootiyy3fKS7LKUJG4VKaD1xW/imdEpbxLUhG314Zde/yyL8jRxcexDVXJIq/VXDvgLvPYIhR9cyOjj3cILN4ToJUaVIz6mA4nOeO1LOKb4CITh9D4rhXAgMBAAGjgcYwgcMwHQYDVR0OBBYEFCqc3t5HNxh34UiauH10iysWQzdSMIGTBgNVHSMEgYswgYiAFCqc3t5HNxh34UiauH10iysWQzdSoWWkYzBhMQswCQYDVQQGEwJGSTEQMA4GA1UECBMHVGFtcGVyZTEQMA4GA1UEBxMHVGFtcGVyZTERMA8GA1UEChMISGFsdHUgT3kxGzAZBgNVBAMTEnd3dy5kcmVhbXNjaG9vbC5maYIJAJIy7M+uXf/3MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADggEBAHFTfiOppPEou6f1mc88mlHuMpLSpfk++KS5cEJUWucGjGktRSjbNbzgyPmWEtYm8kYbqguaCHsqztIFjh/8ITZIwqS9nz22qikJVZAonWynN7fjXNWgKfqPKBclBi5b3BhhX5XYKoYjWQ0hmzTj6a8He91WeM/89h7YxEhq6bXwodqAW2s26LjkcZAFkarOdScCk6IISYX/oU/YM4802YHD0FGy8/S100wAsMcvL6Wc+PhJUF+/ZgxZKboF+k3pIyJs1LlFYetBnzeDrOmFDEIQzeq2dkPvjgJO7nlOpK3VYL2NwmcmfEzOvutnFeOYsHheq62XjPHdk7rl7fVkxSg=</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:KeyDescriptor use="encryption">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>MIIEDDCCAvSgAwIBAgIJAJIy7M+uXf/3MA0GCSqGSIb3DQEBBQUAMGExCzAJBgNVBAYTAkZJMRAwDgYDVQQIEwdUYW1wZXJlMRAwDgYDVQQHEwdUYW1wZXJlMREwDwYDVQQKEwhIYWx0dSBPeTEbMBkGA1UEAxMSd3d3LmRyZWFtc2Nob29sLmZpMB4XDTExMDIwMTEyNTMyNFoXDTIxMDEzMTEyNTMyNFowYTELMAkGA1UEBhMCRkkxEDAOBgNVBAgTB1RhbXBlcmUxEDAOBgNVBAcTB1RhbXBlcmUxETAPBgNVBAoTCEhhbHR1IE95MRswGQYDVQQDExJ3d3cuZHJlYW1zY2hvb2wuZmkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC335M1JHBAiWEpLB6FAKTS5ZhxCoyfY/1uEG814iSUYozFPi6vm5H2GsCj2vJeNYoMhUltG0Q0FWjJMVolU2cSVcHpXnfavie816UsiAT/h6825btdxE5c8IsZ913ChSfBZ1sCOzS1v41Ox8wL66rOfRRpawYwEkXTL0kzuhrw9XgM4eTTj1q5uKx/55Hqc6sD17j2ehfpWrAhIYTPNJez8hps58YmctaJootiyy3fKS7LKUJG4VKaD1xW/imdEpbxLUhG314Zde/yyL8jRxcexDVXJIq/VXDvgLvPYIhR9cyOjj3cILN4ToJUaVIz6mA4nOeO1LOKb4CITh9D4rhXAgMBAAGjgcYwgcMwHQYDVR0OBBYEFCqc3t5HNxh34UiauH10iysWQzdSMIGTBgNVHSMEgYswgYiAFCqc3t5HNxh34UiauH10iysWQzdSoWWkYzBhMQswCQYDVQQGEwJGSTEQMA4GA1UECBMHVGFtcGVyZTEQMA4GA1UEBxMHVGFtcGVyZTERMA8GA1UEChMISGFsdHUgT3kxGzAZBgNVBAMTEnd3dy5kcmVhbXNjaG9vbC5maYIJAJIy7M+uXf/3MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADggEBAHFTfiOppPEou6f1mc88mlHuMpLSpfk++KS5cEJUWucGjGktRSjbNbzgyPmWEtYm8kYbqguaCHsqztIFjh/8ITZIwqS9nz22qikJVZAonWynN7fjXNWgKfqPKBclBi5b3BhhX5XYKoYjWQ0hmzTj6a8He91WeM/89h7YxEhq6bXwodqAW2s26LjkcZAFkarOdScCk6IISYX/oU/YM4802YHD0FGy8/S100wAsMcvL6Wc+PhJUF+/ZgxZKboF+k3pIyJs1LlFYetBnzeDrOmFDEIQzeq2dkPvjgJO7nlOpK3VYL2NwmcmfEzOvutnFeOYsHheq62XjPHdk7rl7fVkxSg=</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://id.dreamschool.fi/saml/SLO/"/>
+    <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+    <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://id.dreamschool.fi/saml/SSO/"/>
+  </md:IDPSSODescriptor>
+</md:EntityDescriptor>

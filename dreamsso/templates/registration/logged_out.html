@@ -1,0 +1,45 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <!-- stylesheets -->
+    <link href='http://fonts.googleapis.com/css?family=Exo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/dialogs/logout/css/reset.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/static/dialogs/logout/css/common.css" type="text/css" media="all" />
+    <!-- javascript / modernizr -->
+    <script type="text/javascript" src="/static/dialogs/logout/js/modernizr.js"></script>
+</head>
+<body>
+
+    <div class="page">
+        <div class="container">
+
+            <div class="logoutBox">
+
+                <div class="header clearfix">
+                    <div class="icon"><img src="/static/dialogs/logout/css/img/icon30-logout.png" alt="icon" /></div>
+                    <div class="title clearfix"><span class="text">{% trans "Logout" %}</span></div>
+                </div>
+
+                <div class="content">
+                    <p>{% trans "Thanks for visiting, welcome back." %}</p>
+                </div>
+
+                <div class="footer">
+                    <p>{% trans "copyright" %}</p>
+                </div>
+
+            </div>
+
+        </div><!-- /.container -->
+    </div><!-- /.page -->
+
+    <!-- javascript -->
+    <script type="text/javascript" src="/static/dialogs/logout/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/dialogs/logout/js/common.js"></script>
+
+</body>
+</html>
+

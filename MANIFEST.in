@@ -1,0 +1,2 @@
+recursive-include dreamsso/static *
+recursive-include dreamsso/templates *

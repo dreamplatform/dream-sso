@@ -1,0 +1,96 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% trans 'login page title' %}</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/login/login.css" type="text/css" media="all" />
+    <script type="text/javascript" src="/static/dialogs/settings/js/modernizr.js"></script>
+</head>
+<body>
+    <div id="page">
+
+        <div id="header">
+            <div class="wrap">
+                <div class="logo"><a href="#"></a></div>
+            </div>
+        </div><!-- /#header -->
+
+        <div id="content">
+            <div class="wrap">
+                <div class="block">
+
+                    <div class="block-header">
+                        <h2>{% trans 'Login' %}</h2>
+                    </div><!-- /.block-header -->
+
+                    <div class="block-body">
+                        {% if form.errors %}
+                        <p id="error" class="active">{% trans 'Username or password was incorrect. Try again, please.' %}</p>
+                        {% endif %}
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="field">
+                                <label for="username">{% trans 'Username' %}</label>
+                                <input type="text" id="username" tabindex="1" name="username" autofocus="autofocus" />
+                            </div>
+                            <div class="field">
+                                <label for="password">{% trans 'Password' %}</label>
+                                <input type="password" id="password" tabindex="2" name="password" />
+                            </div>
+                            <div class="actions">
+                                <input type="submit" tabindex="3" value="{% trans 'Login' %}" />
+                            </div>
+                            <input type="hidden" name="next" value="{{ next }}" />
+                        </form>
+
+                    </div><!-- /.block-body -->
+
+                </div><!-- /.block -->
+            </div><!-- /.wrap -->
+        </div><!-- /#content -->
+
+        <div id="footer">
+            <div class="wrap">
+                <div class="footer-copyright">
+                    <div class="wrap">&copy; {% trans 'copyright' %}</div>
+                </div>
+                <div class="footer-content">
+                    <div class="wrap">
+                        <div class="col-left">
+                            <p class="logo"><a href="/"></a></p>
+                            <p>{% trans 'footer logo' %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /#footer -->
+
+    </div><!-- /#page -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+
+    // Sticky footer
+    positionFooter();
+    $(window).resize(positionFooter).scroll(positionFooter);
+    function positionFooter() {
+      $('#footer').removeAttr('style');
+      if ($('#page').height() < $(window).height()) {
+        $('#footer').css({
+          position: 'absolute',
+          width: '100%',
+          top: ($(window).scrollTop() + $(window).height() - $('#footer').outerHeight()) + 'px'
+        });
+      }
+    }
+
+});
+</script>
+
+</body>
+</html>
